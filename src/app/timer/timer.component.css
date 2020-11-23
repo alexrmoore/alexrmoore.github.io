@@ -1,0 +1,53 @@
+.container {
+    position: relative;
+}
+
+.timerdisplay {
+    position: absolute;
+    left: 60px;
+    top: 500px;
+    width: 400px;
+    height: 50px;
+    background: none;
+}
+
+.startbutton {
+    position: absolute;
+    cursor: pointer;
+    left: 260px;
+    top: 210px;
+    width: 310px;
+    height: 152px;
+    background: none;
+}
+
+.homebutton {
+    position: absolute;
+    cursor: pointer;
+    background-image:  url(../home_button.png);
+    border: 4px groove white;
+    left: 640px;
+    top: 502px;
+    width: 39px;
+    height: 39px;
+}
+
+.hintbutton {
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border: 4px groove white;
+    left: 690px;
+    top: 502px;
+    width: 100px;
+    height: 39px;
+}
+
+.clockicon {
+    position: absolute;
+    background-image: url(../clock_icon.png);
+    left: 10px;
+    top: 502px;
+    width: 39px;
+    height: 39px;
+}

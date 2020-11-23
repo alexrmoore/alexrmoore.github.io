@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 500px;
+    background: black;
+    border: 0px groove yellow;
+}
+
+.click-zone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.click-zone.reset {
+    background: red;
+    border: 0px solid black;
+    left: 275px;
+    top: 245px;
+    width: 280px;
+    height: 60px;
+    font-size: 50px;
+}
+
+.testtextbox {
+    position: absolute;
+    left: 210px;
+    top: 100px;
+    z-index: 3;
+    font-size: 60px;
+}

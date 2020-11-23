@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 500px;
+    background-image: url(../leftdeadend.png);
+    border: 0px groove yellow;
+}
+
+.click-zone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    background: blue;
+    border: 0px solid blue;
+}
+
+.click-zone.b {
+    left: 770px;
+    top: 0px;
+    width: 30px;
+    height: 500px;
+}
+
+.testtextbox {
+    position: absolute;
+    left: 350px;
+    top: 150px;
+    z-index: 3;
+    font-size: xx-large;
+}

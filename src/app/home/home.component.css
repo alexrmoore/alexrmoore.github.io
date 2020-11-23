@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 500px;
+    background-image: url(../homescreencropped.png);
+    border: 0px groove yellow;
+}
+
+.inputbox{
+    position: absolute;
+    left: 347px;
+    top: 400px;
+}
+
+.click-zone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.click-zone.start {
+    left: 260px;
+    top: 210px;
+    width: 310px;
+    height: 152px;
+}
+
+.click-zone.test {
+    background-color: blue;
+    left: 0px;
+    top: 470px;
+    width: 800px;
+    height: 30px;
+}
+
+.click-zone.instructions {
+    background-color:green;
+    left: 0px;
+    top: 440px;
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+}

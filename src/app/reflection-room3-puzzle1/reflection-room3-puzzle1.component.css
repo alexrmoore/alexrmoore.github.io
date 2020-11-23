@@ -1,0 +1,71 @@
+.container {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 500px;
+    background-image: url(../info_background.png);
+    border: 0px groove yellow;
+}
+
+.inputbox{
+    position: absolute;
+    left: 550px;
+    top: 330px;
+}
+
+.titletextbox {
+    position: absolute;
+    font-weight: bold;
+    left: 150px;
+    top: 50px;
+    z-index: 4;
+    font-size: xx-large;
+}
+
+.click-zone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.click-zone.back {
+    background: none;
+    background-image: url(../back_button.png);
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 60px;
+}
+
+.greenlight {
+    position: absolute;
+    background-image: url(../green_light.png);
+    left: 600px;
+    top: 190px;
+    width: 45px;
+    height: 100px;
+}
+
+.redlight {
+    position: absolute;
+    background-image: url(../red_light.png);
+    left: 600px;
+    top: 190px;
+    width: 45px;
+    height: 100px;
+}
+
+.puzzlediagram{
+    position: absolute;
+    background-image: url(../reflection_puzzle_wave_2_256x420.png);
+    left: 120px;
+    top: 30px;
+    width: 256px;
+    height: 420px;
+}
+

@@ -1,0 +1,106 @@
+.container {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 500px;
+    background-image: url(../info_background.png);
+    border: 0px groove yellow;
+}
+
+.inputbox{
+    position: absolute;
+    left: 370px;
+    top: 440px;
+  }
+
+.titletextbox {
+    position: absolute;
+    font-weight: bold;
+    left: 130px;
+    top: 40px;
+    z-index: 4;
+    font-size: xx-large;
+}
+
+.click-zone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.click-zone.back {
+    background: none;
+    background-image: url(../back_button.png);
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 60px;
+}
+
+.moveable-waveform {
+    left: 250px;
+    width:500px;
+    height: 228px;
+    cursor: move;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../sinewave_500x228.png);
+    border-radius: 4px;
+    position: absolute;
+    z-index: 5;
+}
+
+.hiderblock1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 228px;
+    background: #FDF6C3;
+    z-index: 6;
+}
+
+.hiderblock2{
+    position: absolute;
+    top: 0px;
+    left: 503px;
+    width: 250px;
+    height: 228px;
+    background: #FDF6C3;
+    z-index: 6;
+}
+
+.waveform-boundary {
+position: absolute;
+top: 130px;
+left: 24px;
+width: 750px;
+height: 268px;
+max-width: 100%;
+border: none;
+}
+
+.blackoutline{
+position: absolute;
+top: 110px;
+left: 274px;
+width: 247px;
+height: 248px;
+background: none;
+border: solid black 3px;
+}
+
+.sidearrow{
+    background-image: url(../sidearrows_350x65.png);
+    position: absolute;
+    top: 370px;
+    left: 226px;
+    width: 350px;
+    height: 65px;
+}

@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 500px;
+    background: black;
+    border: 0px groove yellow;
+}
+
+.click-zone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.click-zone.back {
+    background: none;
+    background-image: url(../back_button.png);
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 60px;
+    z-index: 6;
+}
+
+.subbackground {
+    position: absolute;
+    cursor: default;
+    background-color: rgb(245, 210, 210);
+    left: 40px;
+    top: 40px;
+    width: 720px;
+    height: 470px;
+    z-index: 5;
+}
+
+.titletextbox {
+    position: absolute;
+    font-weight: bold;
+    left: 70px;
+    top: 50px;
+    z-index: 6;
+    font-size: xx-large;
+}
