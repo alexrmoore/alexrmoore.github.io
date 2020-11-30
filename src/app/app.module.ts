@@ -8,12 +8,6 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LockedRoomsService } from './locked-rooms.service';
-import { Room1Component } from './room1/room1.component';
-import { Room2Component } from './room2/room2.component';
-import { Room2LockedComponent } from './room2-locked/room2-locked.component';
-import { Room3Component } from './room3/room3.component';
-import { Room3LockedComponent } from './room3-locked/room3-locked.component';
-import { Room4Component } from './room4/room4.component';
 import { EndscreenComponent } from './endscreen/endscreen.component';
 import { ReflectionRoom1Component } from './reflection-room1/reflection-room1.component';
 import { ReflectionRoom2LockedComponent } from './reflection-room2-locked/reflection-room2-locked.component';
@@ -54,6 +48,9 @@ import { ReflectionRoom2Puzzle1Component } from './reflection-room2-puzzle1/refl
 import { PhotoelectricRoom3Puzzle1Component } from './photoelectric-room3-puzzle1/photoelectric-room3-puzzle1.component';
 import { InterferenceRoom3Puzzle1Component } from './interference-room3-puzzle1/interference-room3-puzzle1.component';
 import { InstructionScreenComponent } from './instruction-screen/instruction-screen.component';
+import { OverallRoom1Puzzle1Component } from './overall-room1-puzzle1/overall-room1-puzzle1.component';
+import { PhotoelectricRoom4Puzzle1Component } from './photoelectric-room4-puzzle1/photoelectric-room4-puzzle1.component';
+import { InterferenceRoom4Puzzle1Component } from './interference-room4-puzzle1/interference-room4-puzzle1.component';
 
 
 
@@ -62,13 +59,6 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'instructions', component: InstructionScreenComponent },
   { path: 'endscreen', component: EndscreenComponent},
-
-  { path: 'room1', component: Room1Component },
-  { path: 'room2', component: Room2Component },
-  { path: 'room2locked', component: Room2LockedComponent },
-  { path: 'room3', component: Room3Component },
-  { path: 'room3locked', component: Room3LockedComponent },
-  { path: 'room4', component: Room4Component },
 
   { path: 'reflection_room1', component: ReflectionRoom1Component },
   { path: 'reflection_room2', component: ReflectionRoom2Component },
@@ -97,6 +87,7 @@ const routes: Routes = [
   { path: 'interference_room4_info1', component: InterferenceRoom4Info1Component},
   { path: 'interference_room5_info1', component: InterferenceRoom5Info1Component},
   { path: 'interference_room3_puzzle1', component: InterferenceRoom3Puzzle1Component},
+  { path: 'interference_room4_puzzle1', component: InterferenceRoom4Puzzle1Component},
 
   { path: 'photoelectric_room1', component: PhotoelectricRoom1Component},
   { path: 'photoelectric_room2', component: PhotoelectricRoom2Component},
@@ -109,9 +100,12 @@ const routes: Routes = [
   { path: 'photoelectric_room3_info1', component: PhotoelectricRoom3Info1Component},
   { path: 'photoelectric_room4_info1', component: PhotoelectricRoom4Info1Component},
   { path: 'photoelectric_room3_puzzle1', component: PhotoelectricRoom3Puzzle1Component},
+  { path: 'photoelectric_room4_puzzle1', component: PhotoelectricRoom4Puzzle1Component},
 
   { path: 'overall_room1', component: OverallRoom1Component},
   { path: 'overall_room1_locked', component: OverallRoom1LockedComponent},
+
+  { path: 'overall_room1_puzzle1', component: OverallRoom1Puzzle1Component},
 
   { path: 'complete_room', component: CompleteRoomComponent}
 ];
@@ -119,13 +113,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    Room1Component,
-    Room2Component,
-    Room3Component,
     HomeComponent,
-    Room2LockedComponent,
-    Room4Component,
-    Room3LockedComponent,
     EndscreenComponent,
     ReflectionRoom1Component,
     ReflectionRoom2LockedComponent,
@@ -165,7 +153,10 @@ const routes: Routes = [
     ReflectionRoom2Puzzle1Component,
     PhotoelectricRoom3Puzzle1Component,
     InterferenceRoom3Puzzle1Component,
-    InstructionScreenComponent
+    InstructionScreenComponent,
+    OverallRoom1Puzzle1Component,
+    PhotoelectricRoom4Puzzle1Component,
+    InterferenceRoom4Puzzle1Component
   ],
   imports: [
     BrowserModule,

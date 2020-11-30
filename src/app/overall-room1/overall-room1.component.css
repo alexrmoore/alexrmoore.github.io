@@ -34,10 +34,12 @@
     height: 120px;
 }
 
-.testtextbox {
-    position: absolute;
+.click-zone.puzzle1 {
+    background: none;
+    background-image: url(../puzzle_piece.png);
+    cursor: pointer;
     left: 350px;
-    top: 150px;
-    z-index: 3;
-    font-size: xx-large;
+    top: 310px;
+    width: 100px;
+    height: 100px;
 }

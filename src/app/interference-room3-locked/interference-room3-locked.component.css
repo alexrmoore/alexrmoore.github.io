@@ -53,3 +53,13 @@
     width: 100px;
     height: 100px;
 }
+
+.puzzle1locked{
+    position: absolute;
+    background: none;
+    background-image: url(../puzzle_piece_locked.png);
+    left: 170px;
+    top: 80px;
+    width: 100px;
+    height: 100px;
+}

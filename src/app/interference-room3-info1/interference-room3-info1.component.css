@@ -12,21 +12,12 @@
     border: 0px groove yellow;
 }
 
-.testtextbox {
+.infotextbox {
     position: absolute;
-    left: 150px;
-    top: 50px;
-    z-index: 3;
-    font-size: large;
-}
-
-.titletextbox {
-    position: absolute;
-    font-weight: bold;
-    left: 150px;
-    top: 80px;
+    left: 70px;
+    top: 90px;
     z-index: 4;
-    font-size: xx-large;
+    font-size: 25px;
 }
 
 .click-zone {
@@ -42,5 +33,28 @@
     top: 0px;
     width: 140px;
     height: 60px;
+}
+
+ul 
+{
+line-height:270%
+}
+
+.lightdiagram{
+    position: absolute;
+    background-image: url(../light_interference_300x212.png);
+    left: 420px;
+    top: 50px;
+    width: 300px;
+    height: 212px;
+}
+
+.wavediagram{
+    position: absolute;
+    background-image: url(../waterwave_interference_300x150.png);
+    left: 420px;
+    top: 280px;
+    width: 300px;
+    height: 150px;
 }
 

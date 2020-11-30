@@ -34,14 +34,6 @@
     height: 30px;
 }
 
-.testtextbox {
-    position: absolute;
-    left: 350px;
-    top: 150px;
-    z-index: 3;
-    font-size: xx-large;
-}
-
 .click-zone.info1 {
     background: none;
     background-image: url(../info_book.png);

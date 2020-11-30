@@ -1,7 +1,9 @@
 <div class="container">
     <div class="timerdisplay" *ngIf="!hideTimer" style="color:white; font-size: 40px; font-family: Arial; font-style: italic">{{stopwatchSeconds}}</div>
-    <div class="startbutton" *ngIf="newstart" (click)="startTimer()"></div>
-    <div class="homebutton" *ngIf="!newstart" (click)="onHomeClick()"></div>
-    <div class="hintbutton" *ngIf="!newstart" style="color:white; font-size: 38px; font-family: Arial; font-style: italic" (click)="onHintClick()">HINT</div>
+    <div class="timerdisplay" *ngIf="!firstEndscreen" style="color:white; font-size: 40px; font-family: Arial; font-style: italic">{{endscreenTimeLocal}}</div>
+    <div class="startbutton" *ngIf="newstart" (click)="startTimer(true)"></div>
+    <div class="homebutton" *ngIf="!newstart && firstEndscreen" (click)="onHomeClick()"></div>
+    <div class="hintbutton" *ngIf="!newstart && firstEndscreen" style="color:white; font-size: 38px; font-family: Arial; font-style: italic" (click)="onHintClick()">HINT</div>
     <div class='clockicon' *ngIf="!newstart && !hideTimer"></div>
+    <div class='clockicon' *ngIf="!firstEndscreen"></div>
 </div>

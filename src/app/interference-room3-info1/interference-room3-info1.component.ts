@@ -16,7 +16,7 @@ export class InterferenceRoom3Info1Component implements OnInit {
 
   // tslint:disable-next-line:typedef
   public onBackClick(){
-    if (this.lockedRoomsService.roomLocked[3]){
+    if (this.lockedRoomsService.roomLocked[4]){
       this.router.navigateByUrl('/interference_room3_locked');
     }
     else {

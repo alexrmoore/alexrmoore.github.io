@@ -1,21 +1,19 @@
 <div class="container">
     <div class="video"></div>
     <div class="click-zone back" (click)="onBackClick()"></div>
-    <div class="titletextbox" style="font-family: Arial">
-        Drag and Drop 1: {{dragPositionX1}},{{dragPositionY1}}
-    <br >Drag and Drop 2: {{dragPositionX2}},{{dragPositionY2}}</div>
+    <div class="titletextbox" style="font-family: Arial">Select all of the true statements below:</div>
+    <div class="greenlight" *ngIf="puzzleWon"></div>
+    <div class="redlight" *ngIf="!puzzleWon"></div> 
     <div class="inputbox">
+        <input type="checkbox" id="photoelectriccheckbox_a">
+        <label for="photoelectriccheckbox_a"> A</label><br><br>
+        <input type="checkbox" id="photoelectriccheckbox_b">
+        <label for="photoelectriccheckbox_a"> B</label><br><br>
+        <input type="checkbox" id="photoelectriccheckbox_c">
+        <label for="photoelectriccheckbox_c"> C</label><br><br>
+        <input type="checkbox" id="photoelectriccheckbox_d">
+        <label for="photoelectriccheckbox_d"> D</label><br><br>
         <button (click)="submitClick()">Submit</button>
-    </div>
-    <div class="experiment-boundary">
-        <div class="experiment-box1" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd1($event)">
-            Drag me around #1
-        </div>
-        <div class="box1-outline"> Box #1 </div>
-        <div class="experiment-box2" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd2($event)">
-            Drag me around #2
-        </div>
-        <div class="box2-outline"> Box #2 </div>
     </div>
 </div>
 

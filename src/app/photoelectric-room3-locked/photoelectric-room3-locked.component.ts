@@ -8,6 +8,7 @@ import { LockedRoomsService } from '../locked-rooms.service';
   styleUrls: ['./photoelectric-room3-locked.component.css']
 })
 export class PhotoelectricRoom3LockedComponent implements OnInit {
+  hidePuzzle1 = (this.lockedRoomsService.roomLocked[5]);
 
   constructor(private router: Router, private lockedRoomsService: LockedRoomsService) {}
 

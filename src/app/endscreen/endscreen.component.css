@@ -35,3 +35,13 @@
     z-index: 3;
     font-size: 60px;
 }
+
+.click-zone.survey {
+    background: green;
+    border: 0px solid black;
+    left: 275px;
+    top: 340px;
+    width: 280px;
+    height: 60px;
+    font-size: 50px;
+}
