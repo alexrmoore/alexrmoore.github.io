@@ -14,8 +14,9 @@
 
 .infotextbox {
     position: absolute;
-    left: 70px;
+    left: 60px;
     top: 90px;
+    width: 450px;
     z-index: 4;
     font-size: 20px;
 }
@@ -51,4 +52,14 @@
     top: 35px;
     width: 161px;
     height: 150px;
+}
+
+
+.youngdiagram {
+    position: absolute;
+    background-image: url(../interference_discovery_200x151.png);
+    left: 550px;
+    top: 230px;
+    width: 200px;
+    height: 151px;
 }

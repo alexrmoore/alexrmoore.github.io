@@ -46,8 +46,8 @@
 .greenlight {
   position: absolute;
   background-image: url(../green_light.png);
-  left: 600px;
-  top: 190px;
+  left: 700px;
+  top: 40px;
   width: 45px;
   height: 100px;
 }
@@ -55,12 +55,171 @@
 .redlight {
   position: absolute;
   background-image: url(../red_light.png);
-  left: 600px;
-  top: 190px;
+  left: 700px;
+  top: 40px;
   width: 45px;
   height: 100px;
 }
 
+.experiment-boundary {
+  position: absolute;
+  top: 40px;
+  left: 22px;
+  width: 755px;
+  height: 430px;
+  max-width: 100%;
+  border: none;
+}
+
+
+.vacuumchamber{ /*518x211 - divided by 2*/
+  position: absolute;
+  background-image: url(../vacuumchamber.png);
+  background-size: 259px 106px;
+  left: 300px;
+  top: 0px;
+  width: 259px;
+  height: 106px;
+  cursor: move;
+  z-index: 1;
+}
+
+.electrons{ /*310x110 - divided by 2*/
+  position: absolute;
+  background-image: url(../electrons.png);
+  background-size: 155px 55px;
+  left: 300px;
+  top: 300px;
+  width: 155px;
+  height: 55px;
+  cursor: move;
+  z-index: 7;
+}
+
+.detector{ /* 147x151 - divided by 2*/
+  position: absolute;
+  background-image: url(../detector.png);
+  background-size: 74px 76px;
+  left: 60px;
+  top: 100px;
+  width: 74px;
+  height: 76px;
+  cursor: move;
+  z-index: 6;
+}
+
+.metalsurface{ /* 191x162 - divided by 2*/
+  position: absolute;
+  background-image: url(../metalsurface.png);
+  background-size: 96px 81px;
+  left: 50px;
+  top: 0px;
+  width: 96px;
+  height: 81px;
+  cursor: move;
+  z-index: 5;
+}
+
+.incidentlight{ /* 202x167 - divided by 2*/
+  position: absolute;
+  background-image: url(../incidentlight.png);
+  background-size: 101px 84px;
+  left: 240px;
+  top: 140px;
+  width: 101px;
+  height: 84px;
+  cursor: move;
+  z-index: 8;
+}
+
+.wires{ /* 184x360 - divided by 2*/
+  position: absolute;
+  background-image: url(../wires.png);
+  background-size: 92px 180px;
+  left: 50px;
+  top: 230px;
+  width: 92px;
+  height: 180px;
+  cursor: move;
+  z-index: 4;
+}
+
+.battery{ /* 646x128 - divided by 2*/
+  position: absolute;
+  background-image: url(../battery.png);
+  background-size: 323px 64px;
+  left: 400px;
+  top: 120px;
+  width: 323px;
+  height: 64px;
+  cursor: move;
+  z-index: 3;
+}
+
+.ammeter{ /* 247x360 - divided by 2*/
+  position: absolute;
+  background-image: url(../ammeter.png);
+  background-size: 124px 180px;
+  left: 540px;
+  top: 220px;
+  width: 124px;
+  height: 180px;
+  cursor: move;
+  z-index: 2;
+}
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 115px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+}
+
+.vacuumchamber:hover .tooltiptext {
+  left: 70px;
+  visibility: visible;
+}
+.electrons:hover .tooltiptext {
+  left: 20px;
+  top: 10px;
+  visibility: visible;
+}
+.detector:hover .tooltiptext {
+  left: -50px;
+  top: 0px;
+  visibility: visible;
+}
+.metalsurface:hover .tooltiptext {
+  left: 10px;
+  visibility: visible;
+}
+.incidentlight:hover .tooltiptext {
+  top: 25px;
+  visibility: visible;
+}
+.wires:hover .tooltiptext {
+  top: 70px;
+  visibility: visible;
+}
+.battery:hover .tooltiptext {
+  left: 12px;
+  top: 27px;
+  visibility: visible;
+}
+.ammeter:hover .tooltiptext {
+  top: 20px;
+  visibility: visible;
+}
+
+/* 
 .experiment-box1 {
     left: 30px;
     top: 0px;
@@ -81,68 +240,59 @@
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
                 0 2px 2px 0 rgba(0, 0, 0, 0.14),
                 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
-  
-  .experiment-box1:active {
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-                0 8px 10px 1px rgba(0, 0, 0, 0.14),
-                0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
+}
 
-  .box1-outline {
-      position: absolute;
-      top: 100px;
-      left: 220px;
-      width: 110px;
-      height: 110px;
-      border: dashed 3px black;
-      background: none;
-  }
+.experiment-box1:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
 
-  .experiment-box2 {
-    left: 600px;
-    top: 200px;
-    width: 100px;
-    height: 100px;
-    border: solid 1px #ccc;
-    color: rgba(0, 0, 0, 0.87);
-    cursor: move;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #fff;
-    border-radius: 4px;
+.box1-outline {
     position: absolute;
-    z-index: 5;
-    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                0 2px 2px 0 rgba(0, 0, 0, 0.14),
-                0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
-  
-  .experiment-box2:active {
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-                0 8px 10px 1px rgba(0, 0, 0, 0.14),
-                0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-
-  .box2-outline {
-    position: absolute;
-    top: 160px;
-    left: 390px;
+    top: 100px;
+    left: 220px;
     width: 110px;
     height: 110px;
     border: dashed 3px black;
     background: none;
 }
 
-  .experiment-boundary {
-    position: absolute;
-    top: 130px;
-    left: 22px;
-    width: 755px;
-    height: 350px;
-    max-width: 100%;
-    border: none;
-  }
+.experiment-box2 {
+  left: 600px;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  border: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 5;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.experiment-box2:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.box2-outline {
+  position: absolute;
+  top: 160px;
+  left: 390px;
+  width: 110px;
+  height: 110px;
+  border: dashed 3px black;
+  background: none;
+}
+*/
