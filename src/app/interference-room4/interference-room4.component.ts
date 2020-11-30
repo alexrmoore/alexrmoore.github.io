@@ -17,7 +17,7 @@ export class InterferenceRoom4Component implements OnInit {
 
   // tslint:disable-next-line:typedef
   public onUpClick(){
-    if (this.lockedRoomsService.roomLocked[3]){
+    if (this.lockedRoomsService.roomLocked[4]){
       this.router.navigateByUrl('/interference_room3_locked');
     }
     else {
@@ -28,5 +28,10 @@ export class InterferenceRoom4Component implements OnInit {
   // tslint:disable-next-line:typedef
   public info1Click(){
     this.router.navigateByUrl('/interference_room4_info1');
+  }
+
+  // tslint:disable-next-line:typedef
+  public puzzle1Click(){
+    this.router.navigateByUrl('/interference_room4_puzzle1');
   }
 }

@@ -1,7 +1,6 @@
 import { Component, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import { LockedRoomsService } from '../locked-rooms.service';
-import { CdkDragEnd } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-photoelectric-room3-puzzle1',
@@ -9,10 +8,7 @@ import { CdkDragEnd } from '@angular/cdk/drag-drop';
   styleUrls: ['./photoelectric-room3-puzzle1.component.css']
 })
 export class PhotoelectricRoom3Puzzle1Component implements OnInit {
-  dragPositionX1 = 0;
-  dragPositionY1 = 0;
-  dragPositionX2 = 0;
-  dragPositionY2 = 0;
+  puzzleWon = !(this.lockedRoomsService.roomLocked[6]);
 
   constructor(private router: Router, private lockedRoomsService: LockedRoomsService) { }
 
@@ -21,7 +17,7 @@ export class PhotoelectricRoom3Puzzle1Component implements OnInit {
 
   // tslint:disable-next-line:typedef
   public onBackClick(){
-    if (this.lockedRoomsService.roomLocked[4]){
+    if (this.lockedRoomsService.roomLocked[6]){
       this.router.navigateByUrl('/photoelectric_room3_locked');
     }
     else {
@@ -30,30 +26,16 @@ export class PhotoelectricRoom3Puzzle1Component implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
-  dragEnd1(event: CdkDragEnd) {
-    this.dragPositionX1 = event.source.getFreeDragPosition().x;
-    this.dragPositionY1 = event.source.getFreeDragPosition().y;  // There is definitely a way to do this in one function
-    this.dragEnd();
-  }
-
-  // tslint:disable-next-line:typedef
-  dragEnd2(event: CdkDragEnd) {
-    this.dragPositionX2 = event.source.getFreeDragPosition().x;
-    this.dragPositionY2 = event.source.getFreeDragPosition().y;
-    this.dragEnd();
-  }
-
-  // PUT ALL DRAG BOXES IN ONE FUNCTION
-
-  // tslint:disable-next-line:typedef
-  dragEnd() {}
-
-  // tslint:disable-next-line:typedef
   public submitClick(){
-    if (this.dragPositionX1 > 180 && this.dragPositionX1 < 200 && this.dragPositionY1 > 90 && this.dragPositionY1 < 110){
-      if (this.dragPositionX2 > -220 && this.dragPositionX2 < -200 && this.dragPositionY2 > -50 && this.dragPositionY2 < -30) {
-        this.lockedRoomsService.roomLocked[4] = false;
-      }
+    const photoelectriccheckboxA = document.getElementById('photoelectriccheckbox_a') as HTMLInputElement;
+    const photoelectriccheckboxB = document.getElementById('photoelectriccheckbox_b') as HTMLInputElement;
+    const photoelectriccheckboxC = document.getElementById('photoelectriccheckbox_c') as HTMLInputElement;
+    const photoelectriccheckboxD = document.getElementById('photoelectriccheckbox_d') as HTMLInputElement;
+
+    // tslint:disable-next-line:max-line-length
+    if (photoelectriccheckboxA.checked && !photoelectriccheckboxB.checked && !photoelectriccheckboxC.checked && !photoelectriccheckboxD.checked) {
+      this.lockedRoomsService.roomLocked[6] = false;
+      this.puzzleWon = true;
     }
   }
 }

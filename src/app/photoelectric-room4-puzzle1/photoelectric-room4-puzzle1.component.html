@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="video"></div>
+    <div class="click-zone back" (click)="onBackClick()"></div>
+    <div class="titletextbox" style="font-family: Arial">
+        Drag and Drop 1: {{dragPositionX1}},{{dragPositionY1}}
+    <br >Drag and Drop 2: {{dragPositionX2}},{{dragPositionY2}}</div>
+    <div class="inputbox">
+        <button (click)="submitClick()">Submit</button>
+    </div>
+    <div class="experiment-boundary">
+        <div class="experiment-box1" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd1($event)">
+            Drag me around #1
+        </div>
+        <div class="box1-outline"> Box #1 </div>
+        <div class="experiment-box2" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd2($event)">
+            Drag me around #2
+        </div>
+        <div class="box2-outline"> Box #2 </div>
+    </div>
+    <div class="greenlight" *ngIf="puzzleWon"></div>
+    <div class="redlight" *ngIf="!puzzleWon"></div> 
+</div>

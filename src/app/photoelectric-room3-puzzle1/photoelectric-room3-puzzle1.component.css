@@ -14,18 +14,16 @@
 
 .inputbox{
   position: absolute;
-  left: 370px;
-  top: 440px;
-  z-index: 10;
+  left: 100px;
+  top: 140px;
 }
 
 .titletextbox {
     position: absolute;
-    font-weight: bold;
-    left: 130px;
-    top: 40px;
+    left: 100px;
+    top: 80px;
     z-index: 4;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .click-zone {
@@ -43,88 +41,20 @@
     height: 60px;
 }
 
-.experiment-box1 {
-    left: 30px;
-    top: 0px;
-    width: 100px;
+.greenlight {
+    position: absolute;
+    background-image: url(../green_light.png);
+    left: 700px;
+    top: 40px;
+    width: 45px;
     height: 100px;
-    border: solid 1px #ccc;
-    color: rgba(0, 0, 0, 0.87);
-    cursor: move;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #fff;
-    border-radius: 4px;
-    position: absolute;
-    z-index: 5;
-    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                0 2px 2px 0 rgba(0, 0, 0, 0.14),
-                0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
-  
-  .experiment-box1:active {
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-                0 8px 10px 1px rgba(0, 0, 0, 0.14),
-                0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-
-  .box1-outline {
-      position: absolute;
-      top: 100px;
-      left: 220px;
-      width: 110px;
-      height: 110px;
-      border: dashed 3px black;
-      background: none;
-  }
-
-  .experiment-box2 {
-    left: 600px;
-    top: 200px;
-    width: 100px;
-    height: 100px;
-    border: solid 1px #ccc;
-    color: rgba(0, 0, 0, 0.87);
-    cursor: move;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #fff;
-    border-radius: 4px;
-    position: absolute;
-    z-index: 5;
-    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                0 2px 2px 0 rgba(0, 0, 0, 0.14),
-                0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
-  
-  .experiment-box2:active {
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-                0 8px 10px 1px rgba(0, 0, 0, 0.14),
-                0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-
-  .box2-outline {
-    position: absolute;
-    top: 160px;
-    left: 390px;
-    width: 110px;
-    height: 110px;
-    border: dashed 3px black;
-    background: none;
 }
 
-  .experiment-boundary {
+.redlight {
     position: absolute;
-    top: 130px;
-    left: 22px;
-    width: 755px;
-    height: 350px;
-    max-width: 100%;
-    border: none;
-  }
+    background-image: url(../red_light.png);
+    left: 700px;
+    top: 40px;
+    width: 45px;
+    height: 100px;
+}

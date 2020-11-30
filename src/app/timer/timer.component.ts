@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import {HomeComponent} from '../home/home.component';
 import {Router} from '@angular/router';
+import { LockedRoomsService } from '../locked-rooms.service';
 
 
 @Component({
@@ -14,8 +15,10 @@ export class TimerComponent implements OnInit {
   timerRef;
   newstart = true;
   hideTimer = false;
+  firstEndscreen = true;
+  endscreenTimeLocal = 0;
 
-  constructor(private router: Router, private homeComponent: HomeComponent) { }
+  constructor(private router: Router, private homeComponent: HomeComponent, private lockedRoomsService: LockedRoomsService) {}
 
   ngOnInit(): void {
   }
@@ -24,18 +27,23 @@ export class TimerComponent implements OnInit {
   startTimer(){
     this.homeComponent.PhysicsPathStart();
     this.hideTimer = this.homeComponent.hideTimer;
-
     const startTime = Date.now() - (this.stopwatch || 0);
     this.timerRef = setInterval(() => {
       this.stopwatch = (Date.now() - startTime) / 1000;
       this.stopwatchSeconds = Math.floor(this.stopwatch);
+      if (this.router.url === '/endscreen' && this.firstEndscreen){
+        this.lockedRoomsService.endTimerStore = this.stopwatchSeconds;
+        this.endscreenTimeLocal = this.lockedRoomsService.endTimerStore;
+        this.firstEndscreen = false;
+        this.hideTimer = true;
+      }
     });
     this.newstart = false;
   }
 
-
   // tslint:disable-next-line:typedef
   onHomeClick(){
+    // this.timerRunning = false;
     this.newstart = true;
     this.stopwatch = undefined;
     this.stopwatchSeconds = undefined;
@@ -46,5 +54,7 @@ export class TimerComponent implements OnInit {
   // tslint:disable-next-line:typedef
   onHintClick(){
     console.log('Hint Button Clicked!');
+    console.log(this.lockedRoomsService.roomLocked);
   }
+
 }

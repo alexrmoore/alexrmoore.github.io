@@ -24,4 +24,9 @@ export class OverallRoom1Component implements OnInit {
   public onLeftClick(){
     this.router.navigateByUrl('/photoelectric_room3');
   }
+
+  // tslint:disable-next-line:typedef
+  public puzzle1Click(){
+    this.router.navigateByUrl('/overall_room1_puzzle1');
+  }
 }

@@ -16,7 +16,7 @@ export class PhotoelectricRoom4Component implements OnInit {
 
   // tslint:disable-next-line:typedef
   public onDownClick(){
-    if (this.lockedRoomsService.roomLocked[4]){
+    if (this.lockedRoomsService.roomLocked[6]){
       this.router.navigateByUrl('/photoelectric_room3_locked');
     }
     else {
@@ -27,5 +27,10 @@ export class PhotoelectricRoom4Component implements OnInit {
   // tslint:disable-next-line:typedef
   public info1Click(){
     this.router.navigateByUrl('/photoelectric_room4_info1');
+  }
+
+  // tslint:disable-next-line:typedef
+  public puzzle1Click(){
+    this.router.navigateByUrl('/photoelectric_room4_puzzle1');
   }
 }

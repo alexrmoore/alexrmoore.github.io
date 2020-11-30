@@ -20,8 +20,13 @@ export class OverallRoom1LockedComponent implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
+  public puzzle1Click(){
+    this.router.navigateByUrl('/overall_room1_puzzle1');
+  }
+
+  // tslint:disable-next-line:typedef
   @HostListener('click', ['$event']) onClick(event) {
-    this.lockedRoomsService.roomLocked[5] = false;
+    this.lockedRoomsService.roomLocked[7] = false;
     this.router.navigateByUrl('/overall_room1');
   }
 }
