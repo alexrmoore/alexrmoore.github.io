@@ -25,4 +25,23 @@ export class OverallRoom1Puzzle1Component implements OnInit {
     }
   }
 
+  // tslint:disable-next-line:typedef
+  public submitClick(){
+    const reflectioncheckboxW = document.getElementById('reflectioncheckbox_wave') as HTMLInputElement;
+    const reflectioncheckboxP = document.getElementById('reflectioncheckbox_particle') as HTMLInputElement;
+    const interferencecheckboxW = document.getElementById('interferencecheckbox_wave') as HTMLInputElement;
+    const interferencecheckboxP = document.getElementById('interferencecheckbox_particle') as HTMLInputElement;
+    const photoelectriccheckboxW = document.getElementById('photoelectriccheckbox_wave') as HTMLInputElement;
+    const photoelectriccheckboxP = document.getElementById('photoelectriccheckbox_particle') as HTMLInputElement;
+    // tslint:disable-next-line:max-line-length
+    if (reflectioncheckboxW.checked && reflectioncheckboxP.checked) {
+      if (interferencecheckboxW.checked && !interferencecheckboxP.checked) {
+        if (!photoelectriccheckboxW.checked && photoelectriccheckboxP.checked) {
+          this.lockedRoomsService.roomLocked[7] = false;
+          this.puzzleWon = true;
+        }
+      }
+    }
+  }
+
 }

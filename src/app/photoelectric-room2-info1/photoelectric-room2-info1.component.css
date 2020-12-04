@@ -12,21 +12,22 @@
     border: 0px groove yellow;
 }
 
-.testtextbox {
+.infotextbox {
     position: absolute;
-    left: 150px;
-    top: 50px;
-    z-index: 3;
-    font-size: large;
+    left: 50px;
+    top: 90px;
+    width: 550px;
+    z-index: 4;
+    font-size: 20px;
 }
 
 .titletextbox {
     position: absolute;
     font-weight: bold;
-    left: 150px;
-    top: 80px;
+    left: 80px;
+    top: 50px;
     z-index: 4;
-    font-size: xx-large;
+    font-size: 30px;
 }
 
 .click-zone {
@@ -42,5 +43,32 @@
     top: 0px;
     width: 140px;
     height: 60px;
+}
+
+.heinrichhertz{
+    position: absolute;
+    background-image: url(../heinrichhertz.png);
+    left: 630px;
+    top: 90px;
+    width: 110px;
+    height: 120px;
+}
+
+.philliplennard{
+    position: absolute;
+    background-image: url(../philliplennard.png);
+    left: 630px;
+    top: 220px;
+    width: 110px;
+    height: 120px;
+}
+
+.alberteinstein{
+    position: absolute;
+    background-image: url(../alberteinstein.png);
+    left: 630px;
+    top: 350px;
+    width: 110px;
+    height: 120px;
 }
 

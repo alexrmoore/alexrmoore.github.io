@@ -35,6 +35,11 @@ export class PhotoelectricRoom3Component implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
+  public onDownClick(){
+    this.router.navigateByUrl('/photoelectric_room5');
+  }
+
+  // tslint:disable-next-line:typedef
   public info1Click(){
     this.router.navigateByUrl('/photoelectric_room3_info1');
   }

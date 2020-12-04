@@ -31,9 +31,10 @@ export class PhotoelectricRoom3Puzzle1Component implements OnInit {
     const photoelectriccheckboxB = document.getElementById('photoelectriccheckbox_b') as HTMLInputElement;
     const photoelectriccheckboxC = document.getElementById('photoelectriccheckbox_c') as HTMLInputElement;
     const photoelectriccheckboxD = document.getElementById('photoelectriccheckbox_d') as HTMLInputElement;
+    const photoelectriccheckboxE = document.getElementById('photoelectriccheckbox_e') as HTMLInputElement;
 
     // tslint:disable-next-line:max-line-length
-    if (photoelectriccheckboxA.checked && !photoelectriccheckboxB.checked && !photoelectriccheckboxC.checked && !photoelectriccheckboxD.checked) {
+    if (photoelectriccheckboxA.checked && !photoelectriccheckboxB.checked && photoelectriccheckboxC.checked && !photoelectriccheckboxD.checked && photoelectriccheckboxE.checked) {
       this.lockedRoomsService.roomLocked[6] = false;
       this.puzzleWon = true;
     }

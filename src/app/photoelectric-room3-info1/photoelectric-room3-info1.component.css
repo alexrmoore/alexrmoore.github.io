@@ -12,21 +12,13 @@
     border: 0px groove yellow;
 }
 
-.testtextbox {
+.infotextbox {
     position: absolute;
-    left: 150px;
-    top: 50px;
-    z-index: 3;
-    font-size: large;
-}
-
-.titletextbox {
-    position: absolute;
-    font-weight: bold;
-    left: 150px;
-    top: 80px;
+    left: 50px;
+    top: 250px;
+    width: 700px;
     z-index: 4;
-    font-size: xx-large;
+    font-size: 20px;
 }
 
 .click-zone {
@@ -42,5 +34,16 @@
     top: 0px;
     width: 140px;
     height: 60px;
+}
+
+.photoelectricexperiment{
+    position: absolute;
+    background-image: url(../photoelectric_experiment.gif);
+    background-size: auto;
+    border: 3px black solid;
+    left: 171px;
+    top: 40px;
+    width: 457px;
+    height: 193px;
 }
 

@@ -8,7 +8,7 @@
     top: 0;
     width: 800px;
     height: 500px;
-    background-image: url(../Tjunction_down_locked.png);
+    background-image: url(../4junction_locked.png);
     border: 0px groove yellow;
 }
 
@@ -30,6 +30,13 @@
 .click-zone.up {
     left: 340px;
     top: 0px;
+    width: 120px;
+    height: 30px;
+}
+
+.click-zone.down {
+    left: 340px;
+    top: 470px;
     width: 120px;
     height: 30px;
 }

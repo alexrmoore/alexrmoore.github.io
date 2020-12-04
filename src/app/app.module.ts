@@ -51,6 +51,12 @@ import { InstructionScreenComponent } from './instruction-screen/instruction-scr
 import { OverallRoom1Puzzle1Component } from './overall-room1-puzzle1/overall-room1-puzzle1.component';
 import { PhotoelectricRoom4Puzzle1Component } from './photoelectric-room4-puzzle1/photoelectric-room4-puzzle1.component';
 import { InterferenceRoom4Puzzle1Component } from './interference-room4-puzzle1/interference-room4-puzzle1.component';
+import { AnonymousIdentifierService } from './anonymous-identifier.service';
+import { PhotoelectricRoom5Component } from './photoelectric-room5/photoelectric-room5.component';
+import { PhotoelectricRoom5Info1Component } from './photoelectric-room5-info1/photoelectric-room5-info1.component';
+import { PhotoelectricRoom5Info2Component } from './photoelectric-room5-info2/photoelectric-room5-info2.component';
+import { OverallRoom1Info1Component } from './overall-room1-info1/overall-room1-info1.component';
+import { OverallRoom1Info2Component } from './overall-room1-info2/overall-room1-info2.component';
 
 
 
@@ -94,6 +100,7 @@ const routes: Routes = [
   { path: 'photoelectric_room3', component: PhotoelectricRoom3Component},
   { path: 'photoelectric_room3_locked', component: PhotoelectricRoom3LockedComponent},
   { path: 'photoelectric_room4', component: PhotoelectricRoom4Component},
+  { path: 'photoelectric_room5', component: PhotoelectricRoom5Component},
 
   { path: 'photoelectric_room1_info1', component: PhotoelectricRoom1Info1Component},
   { path: 'photoelectric_room2_info1', component: PhotoelectricRoom2Info1Component},
@@ -101,9 +108,13 @@ const routes: Routes = [
   { path: 'photoelectric_room4_info1', component: PhotoelectricRoom4Info1Component},
   { path: 'photoelectric_room3_puzzle1', component: PhotoelectricRoom3Puzzle1Component},
   { path: 'photoelectric_room4_puzzle1', component: PhotoelectricRoom4Puzzle1Component},
+  { path: 'photoelectric_room5_info1', component: PhotoelectricRoom5Info1Component},
+  { path: 'photoelectric_room5_info2', component: PhotoelectricRoom5Info2Component},
 
   { path: 'overall_room1', component: OverallRoom1Component},
   { path: 'overall_room1_locked', component: OverallRoom1LockedComponent},
+  { path: 'overall_room1_info1', component: OverallRoom1Info1Component},
+  { path: 'overall_room1_info2', component: OverallRoom1Info2Component},
 
   { path: 'overall_room1_puzzle1', component: OverallRoom1Puzzle1Component},
 
@@ -156,7 +167,12 @@ const routes: Routes = [
     InstructionScreenComponent,
     OverallRoom1Puzzle1Component,
     PhotoelectricRoom4Puzzle1Component,
-    InterferenceRoom4Puzzle1Component
+    InterferenceRoom4Puzzle1Component,
+    PhotoelectricRoom5Component,
+    PhotoelectricRoom5Info1Component,
+    PhotoelectricRoom5Info2Component,
+    OverallRoom1Info1Component,
+    OverallRoom1Info2Component
   ],
   imports: [
     BrowserModule,
@@ -164,7 +180,7 @@ const routes: Routes = [
     DragDropModule
   ],
   exports: [RouterModule],
-  providers: [LockedRoomsService, HomeComponent, TimerComponent],
+  providers: [LockedRoomsService, AnonymousIdentifierService, HomeComponent, TimerComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
