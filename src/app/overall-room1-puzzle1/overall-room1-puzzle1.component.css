@@ -12,15 +12,6 @@
     border: 0px groove yellow;
 }
 
-.titletextbox {
-    position: absolute;
-    font-weight: bold;
-    left: 150px;
-    top: 50px;
-    z-index: 4;
-    font-size: xx-large;
-}
-
 .click-zone {
     position: absolute;
     cursor: pointer;
@@ -39,8 +30,8 @@
 .greenlight {
     position: absolute;
     background-image: url(../green_light.png);
-    left: 600px;
-    top: 190px;
+    left: 700px;
+    top: 50px;
     width: 45px;
     height: 100px;
 }
@@ -48,8 +39,39 @@
 .redlight {
     position: absolute;
     background-image: url(../red_light.png);
-    left: 600px;
-    top: 190px;
+    left: 700px;
+    top: 50px;
     width: 45px;
     height: 100px;
 }
+
+.tablezone{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 70px;
+    left: 60px;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+  }
+
+th, td {
+    padding: 5px;
+    text-align: center;
+  }
+
+input.largerCheckbox { 
+width: 75px; 
+height: 75px; 
+} 
+
+.inputbox{
+    position: absolute;
+    left: 370px;
+    top: 440px;
+    z-index: 10;
+  }

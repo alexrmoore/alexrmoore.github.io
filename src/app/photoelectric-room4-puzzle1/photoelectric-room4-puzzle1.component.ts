@@ -27,7 +27,7 @@ export class PhotoelectricRoom4Puzzle1Component implements OnInit {
   dragEnd(event: CdkDragEnd, objectname, objectnumber) {
     this.currentCoordinates[objectnumber][0] = this.startingCoordinates[objectnumber][0] + event.source.getFreeDragPosition().x;
     this.currentCoordinates[objectnumber][1] = this.startingCoordinates[objectnumber][1] + event.source.getFreeDragPosition().y;
-    console.log(this.currentCoordinates);
+    // console.log(this.currentCoordinates);
   }
 
   // tslint:disable-next-line:typedef

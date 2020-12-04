@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import {Router} from '@angular/router';
+import { AnonymousIdentifierService } from './anonymous-identifier.service';
 
 
 @Component({
@@ -11,7 +12,9 @@ import {Router} from '@angular/router';
 export class AppComponent {
   title = 'EscapeRoom';
 
-  constructor(private router: Router){
+
+  constructor(private router: Router, private anonymousIdentifierService: AnonymousIdentifierService){
+    this.anonymousIdentifierService.generateUUID();
     this.router.navigateByUrl('/home');
   }
 }

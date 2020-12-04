@@ -29,4 +29,14 @@ export class OverallRoom1Component implements OnInit {
   public puzzle1Click(){
     this.router.navigateByUrl('/overall_room1_puzzle1');
   }
+
+  // tslint:disable-next-line:typedef
+  public info1Click(){
+    this.router.navigateByUrl('/overall_room1_info1');
+  }
+
+  // tslint:disable-next-line:typedef
+  public info2Click(){
+    this.router.navigateByUrl('/overall_room1_info2');
+  }
 }
