@@ -5,14 +5,15 @@ import { UUID } from 'angular2-uuid';
   providedIn: 'root'
 })
 export class AnonymousIdentifierService {
+  footerTimerRef;
+  anonymousCodeLong: string;
   anonymousCode: string;
   constructor() { }
 
   // tslint:disable-next-line:typedef
   generateUUID(){
-    this.anonymousCode = UUID.UUID();
+    this.anonymousCodeLong = UUID.UUID();
+    this.anonymousCode = this.anonymousCodeLong.slice(0, 8); // this.anonymousCodeLong.slice(0, 13)
+    console.log(this.anonymousCodeLong);
   }
-
 }
-
-

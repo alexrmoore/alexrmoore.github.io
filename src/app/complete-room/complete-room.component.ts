@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import { LockedRoomsService } from '../locked-rooms.service';
+import { TimersService } from '../timers.service';
 
 @Component({
   selector: 'app-complete-room',
@@ -9,7 +10,7 @@ import { LockedRoomsService } from '../locked-rooms.service';
 })
 export class CompleteRoomComponent implements OnInit {
 
-  constructor(private router: Router, private lockedRoomsService: LockedRoomsService) {}
+  constructor(private router: Router, private lockedRoomsService: LockedRoomsService, private timersService: TimersService) {}
 
   ngOnInit(): void {
   }
@@ -21,7 +22,8 @@ export class CompleteRoomComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   public onEndClick(){
-    this.router.navigateByUrl('/endscreen');
+    this.router.navigateByUrl('/congratulations');
+    this.timersService.finalOverallTime = this.timersService.overallStopwatchSeconds;
   }
 
 }
