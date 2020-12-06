@@ -3,11 +3,60 @@
 <head>
   <meta charset="utf-8">
   <title>Wave-Particle Duality Escape Room</title>
-  <base href="https://alexrmoore.github.io/">
+  <base href="https://alexrmoore.github.io">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+  <style type="text/css">
+  .background {
+    position: absolute;
+    background: #272525;
+    width: 800px;
+    height: 550px;
+    z-index: 1;
+  }
+
+  .loadingicon {
+    animation: rotation 6s infinite linear;
+    position: absolute;
+    background-image: url(./puzzle_piece.png);
+    background-size: 120px 120px;
+    left: 340px;
+    top: 170px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+  }
+
+  .loadingtext{
+    position: absolute;
+    left: 0px;
+    width: 800px;
+    top: 350px;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    z-index: 3;
+  }
+
+  @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+  }
+
+  </style>
+
 <link rel="stylesheet" href="styles.280e991c5992f8630bc9.css"></head>
 <body>
-  <app-root>Loading...</app-root>
-<script src="runtime.f9956ac3c2762746a398.js" defer></script><script src="polyfills.08cdd93a9921fbb99ed7.js" defer></script><script src="main.53f8e336548c5617f485.js" defer></script></body>
+  <app-root>
+    <div class="background"></div>
+    <div class="loadingicon"></div>
+    <div class="loadingtext" style="font-family: Arial; color:white"><b>Loading...</b></div>
+  </app-root>
+<script src="runtime.f9956ac3c2762746a398.js" defer></script><script src="polyfills.08cdd93a9921fbb99ed7.js" defer></script><script src="main.84d85a5fd11fa4a58937.js" defer></script></body>
 </html>
