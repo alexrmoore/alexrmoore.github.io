@@ -5,8 +5,7 @@ import { Injectable } from '@angular/core';
 })
 
 export class LockedRoomsService {
-  // roomLocked = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
-  roomLocked = [true, true, true, true, true, true];
+  roomLocked = [true, true, true, true, true, true, true, true];
   endTimerStore = 0;
 
   constructor() {

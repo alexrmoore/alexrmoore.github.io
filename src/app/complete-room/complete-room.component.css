@@ -16,8 +16,6 @@
     position: absolute;
     cursor: pointer;
     z-index: 2;
-    background: red;
-    border: 0px solid blue;
 }
 
 .click-zone.left {
@@ -28,18 +26,11 @@
 }
 
 .click-zone.end {
-    background: none;
-    border: 0px solid red;
+    background-image: url(../trophy_greybackground.png);
+    border: none;
     left: 650px;
     top: 150px;
     width: 140px;
     height: 200px;
 }
 
-.testtextbox {
-    position: absolute;
-    left: 350px;
-    top: 150px;
-    z-index: 3;
-    font-size: xx-large;
-}

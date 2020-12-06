@@ -1,0 +1,42 @@
+.footerbackground {
+    position: absolute;
+    left: 0;
+    top: 500px;
+    width: 800px;
+    height: 50px;
+    background: black;
+    z-index: 1;
+}
+
+.timerdisplay {
+    position: absolute;
+    left: 60px;
+    top: 500px;
+    width: 400px;
+    height: 50px;
+    background: none;
+    z-index: 2;
+    font-size: 40px;
+}
+
+.clockicon {
+    position: absolute;
+    background-image: url(../clock_icon.png);
+    left: 10px;
+    top: 504px;
+    width: 39px;
+    height: 39px;
+    z-index: 2;
+}
+
+.anonymouscodebox{
+    position: absolute;
+    position: absolute;
+    left: 0px;
+    top: 500px;
+    width: 790px;
+    height: 50px;
+    font-size: 40px;
+    text-align: right;
+    z-index: 2;
+}
