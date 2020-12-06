@@ -24,7 +24,7 @@ export class InstructionsComponent implements OnInit {
   surveyClick(){
     this.startSurveyURL = this.startSurveyURL.concat(this.anonymousCode);
     window.open(this.startSurveyURL, '_blank');
-    setTimeout(() => { this.showStart = true; }, 50000);
+    setTimeout(() => { this.showStart = true; }, 30000);
   }
 
   // tslint:disable-next-line:typedef

@@ -14,6 +14,5 @@ export class AnonymousIdentifierService {
   generateUUID(){
     this.anonymousCodeLong = UUID.UUID();
     this.anonymousCode = this.anonymousCodeLong.slice(0, 8); // this.anonymousCodeLong.slice(0, 13)
-    console.log(this.anonymousCodeLong);
   }
 }
