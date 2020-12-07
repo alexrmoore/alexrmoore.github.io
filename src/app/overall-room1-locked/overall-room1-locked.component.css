@@ -31,8 +31,8 @@
     background: none;
     background-image: url(../puzzle_piece.png);
     cursor: pointer;
-    left: 350px;
-    top: 310px;
+    left: 300px;
+    top: 350px;
     width: 100px;
     height: 100px;
 }
@@ -41,7 +41,7 @@
     background: none;
     background-image: url(../info_book.png);
     cursor: pointer;
-    left: 200px;
+    left: 140px;
     top: 80px;
     width: 100px;
     height: 100px;
@@ -51,8 +51,8 @@
     background: none;
     background-image: url(../info_book.png);
     cursor: pointer;
-    left: 450px;
-    top: 80px;
+    left: 500px;
+    top: 170px;
     width: 100px;
     height: 100px;
 }
