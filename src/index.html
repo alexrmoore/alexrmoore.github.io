@@ -20,13 +20,13 @@
   .loadingicon {
     animation: rotation 6s infinite linear;
     position: absolute;
-    background-image: url(./puzzle_piece.png);
+    background-image: url(./assets/puzzle_piece.png);
     background-size: 120px 120px;
     left: 340px;
     top: 170px;
     width: 120px;
     height: 120px;
-    z-index: 2;
+    z-index: 3;
   }
 
   .loadingtext{
@@ -53,10 +53,10 @@
 
 </head>
 <body>
-  <app-root>
+  <app-root2>
     <div class="background"></div>
-    <div class="loadingicon"></div>
     <div class="loadingtext" style="font-family: Arial; color:white"><b>Loading...</b></div>
-  </app-root>
+    <div class="loadingicon"></div>
+  </app-root2>
 </body>
 </html>
