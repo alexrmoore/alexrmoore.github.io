@@ -30,6 +30,8 @@ export class FooterComponent implements OnInit {
   // tslint:disable-next-line:typedef
   onInstructionsClick(){
     this.router.navigateByUrl('/instructions');
+    this.timersService.currentPauseTime = this.timersService.overallStopwatch;
+    this.timersService.stopOverallTimer();
   }
 
 }

@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TimersService {
+  currentPauseTime = 0;
   overallStopwatch: number;
   overallStopwatchSeconds: number;
   overallTimerRef;
@@ -27,6 +28,7 @@ export class TimersService {
     const startTime = Date.now() - (this.overallStopwatch || 0);
     this.overallTimerRef = setInterval(() => {
       this.overallStopwatch = (Date.now() - startTime) / 1000;
+      this.overallStopwatch = this.overallStopwatch + this.currentPauseTime;
       this.overallStopwatchSeconds = Math.floor(this.overallStopwatch);
 
       this.currentMinsTemp = Math.floor(this.overallStopwatchSeconds / 60);
