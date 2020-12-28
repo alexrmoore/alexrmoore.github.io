@@ -19,6 +19,7 @@
 }
 
 .click-zone.left {
+    background: red;
     left: 0px;
     top: 190px;
     width: 30px;

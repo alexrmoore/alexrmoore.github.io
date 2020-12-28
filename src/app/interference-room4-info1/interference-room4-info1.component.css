@@ -14,9 +14,9 @@
 
 .infotextbox {
     position: absolute;
-    left: 60px;
-    top: 90px;
-    width: 450px;
+    left: 40px;
+    top: 80px;
+    width: 470px;
     z-index: 4;
     font-size: 20px;
 }

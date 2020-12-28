@@ -43,6 +43,7 @@ line-height:270%
 .lightdiagram{
     position: absolute;
     background-image: url(../light_interference_300x212.png);
+    border: 3px black solid;
     left: 420px;
     top: 50px;
     width: 300px;
@@ -52,6 +53,7 @@ line-height:270%
 .wavediagram{
     position: absolute;
     background-image: url(../waterwave_interference_300x150.png);
+    border: 3px black solid;
     left: 420px;
     top: 280px;
     width: 300px;

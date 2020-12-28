@@ -48,3 +48,13 @@
     z-index: 11;
     font-size: 30px;
 }
+
+.hidebutton {
+    position: absolute;
+    background: #292525;
+    left: 20px;
+    top: 400px;
+    width: 760px;
+    height: 130px;
+    z-index: 21;
+}

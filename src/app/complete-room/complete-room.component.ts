@@ -24,6 +24,7 @@ export class CompleteRoomComponent implements OnInit {
   public onEndClick(){
     this.router.navigateByUrl('/congratulations');
     this.timersService.finalOverallTime = this.timersService.overallStopwatchSeconds;
+    this.timersService.stopOverallTimer();
   }
 
 }

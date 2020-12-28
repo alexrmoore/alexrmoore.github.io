@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import { LockedRoomsService } from '../locked-rooms.service';
+import { PuzzleTrackingService} from '../puzzle-tracking.service';
 
 @Component({
   selector: 'app-photoelectric-room3-puzzle1',
@@ -10,7 +11,8 @@ import { LockedRoomsService } from '../locked-rooms.service';
 export class PhotoelectricRoom3Puzzle1Component implements OnInit {
   puzzleWon = !(this.lockedRoomsService.roomLocked[6]);
 
-  constructor(private router: Router, private lockedRoomsService: LockedRoomsService) { }
+  // tslint:disable-next-line:max-line-length
+  constructor(private router: Router, private lockedRoomsService: LockedRoomsService, private puzzleTrackingService: PuzzleTrackingService) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +29,7 @@ export class PhotoelectricRoom3Puzzle1Component implements OnInit {
 
   // tslint:disable-next-line:typedef
   public submitClick(){
+    this.puzzleTrackingService.puzzleAttempts[6] = this.puzzleTrackingService.puzzleAttempts[6] + 1;
     const photoelectriccheckboxA = document.getElementById('photoelectriccheckbox_a') as HTMLInputElement;
     const photoelectriccheckboxB = document.getElementById('photoelectriccheckbox_b') as HTMLInputElement;
     const photoelectriccheckboxC = document.getElementById('photoelectriccheckbox_c') as HTMLInputElement;
