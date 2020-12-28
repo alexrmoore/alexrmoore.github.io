@@ -58,6 +58,12 @@ import { TitlescreenComponent } from './titlescreen/titlescreen.component';
 import { FooterComponent } from './footer/footer.component';
 import { CongratulationsscreenComponent } from './congratulationsscreen/congratulationsscreen.component';
 import { InstructionsComponent } from './instructions/instructions.component';
+import { InGameInstructionsComponent } from './in-game-instructions/in-game-instructions.component';
+import { PreSurveyscreenComponent } from './pre-surveyscreen/pre-surveyscreen.component';
+import { PostSurveyscreenComponent } from './post-surveyscreen/post-surveyscreen.component';
+import { ConsentFormComponent } from './consent-form/consent-form.component';
+import { ConsentFormFailedComponent } from './consent-form-failed/consent-form-failed.component';
+import { ConsentService } from './consent.service';
 
 
 
@@ -65,6 +71,7 @@ import { InstructionsComponent } from './instructions/instructions.component';
 const routes: Routes = [
   { path: 'title', component: TitlescreenComponent },
   { path: 'startinstructions', component: InstructionsComponent},
+  { path: 'instructions', component: InGameInstructionsComponent},
   { path: 'congratulations', component: CongratulationsscreenComponent},
 
   { path: 'reflection_room1', component: ReflectionRoom1Component },
@@ -119,7 +126,12 @@ const routes: Routes = [
 
   { path: 'overall_room1_puzzle1', component: OverallRoom1Puzzle1Component},
 
-  { path: 'complete_room', component: CompleteRoomComponent}
+  { path: 'complete_room', component: CompleteRoomComponent},
+
+  { path: 'consent_form', component: ConsentFormComponent},
+  { path: 'consent_form_failed', component: ConsentFormFailedComponent},
+  { path: 'presurvey', component: PreSurveyscreenComponent},
+  { path: 'postsurvey', component: PostSurveyscreenComponent}
 ];
 
 @NgModule({
@@ -174,6 +186,11 @@ const routes: Routes = [
     FooterComponent,
     CongratulationsscreenComponent,
     InstructionsComponent,
+    InGameInstructionsComponent,
+    PreSurveyscreenComponent,
+    PostSurveyscreenComponent,
+    ConsentFormComponent,
+    ConsentFormFailedComponent,
   ],
   imports: [
     BrowserModule,
@@ -181,7 +198,7 @@ const routes: Routes = [
     DragDropModule
   ],
   exports: [RouterModule],
-  providers: [LockedRoomsService, AnonymousIdentifierService, TimersService],
+  providers: [LockedRoomsService, AnonymousIdentifierService, TimersService, ConsentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

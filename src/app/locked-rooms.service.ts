@@ -8,6 +8,8 @@ export class LockedRoomsService {
   roomLocked = [true, true, true, true, true, true, true, true];
   endTimerStore = 0;
 
+  firstCompletion = [true, true, true, true];
+
   constructor() {
   }
 

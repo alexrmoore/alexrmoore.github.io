@@ -8,10 +8,11 @@
     <div class="experiment-boundary">
         <div class="vacuumchamber" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd($event,'vacuumchamber', 0)">
             <span class="tooltiptext" style="font-family: Arial">Vacuum Chamber</span>
+            <div class="electrons" id = "electrons"></div>
         </div>
-        <div class="electrons" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd($event,'electrons', 1)">
+        <!-- <div class="electrons" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd($event,'electrons', 1)">
             <span class="tooltiptext" style="font-family: Arial">Photoelectrons</span>
-        </div>
+        </div> -->
         <div class="detector" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd($event,'detector', 2)">
             <span class="tooltiptext" style="font-family: Arial">Detector</span>
         </div>
@@ -28,6 +29,7 @@
             <span class="tooltiptext" style="font-family: Arial">Battery</span>
         </div>
         <div class="ammeter" cdkDragBoundary=".experiment-boundary" cdkDrag (cdkDragEnded)="dragEnd($event,'ammeter', 7)">
+            <div class = "ammeter2" id = "ammeter"></div>
             <span class="tooltiptext" style="font-family: Arial">Ammeter</span>
         </div>
     </div>

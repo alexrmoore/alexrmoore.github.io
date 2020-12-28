@@ -50,6 +50,7 @@
     width: 500px;
     height: 167px;
     background-image: url(../waveinterference_500x167.gif);
+    border: 3px black solid;
 }
 
 .gif2 {
@@ -59,5 +60,6 @@
     width: 500px;
     height: 100px;
     background-image: url(../ballcollision_500x100.gif);
+    border: 3px black solid;
 }
 

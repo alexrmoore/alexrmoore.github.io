@@ -8,7 +8,8 @@
     top: 0;
     width: 800px;
     height: 550px;
-    background-image: url(../Instructions_800x550.png);
+    /* background-image: url(../Instructions_800x550.png); */
+    background-image: url(../typeformInstructions.png);
     z-index: 10;
 }
 
@@ -18,22 +19,29 @@
     z-index: 2;
 }
 
+/*
 .click-zone.survey {
     left: 116px;
     top: 448px;
     width: 258px;  
     height: 60px; 
     z-index: 20;
-}
+}*/
 
 .click-zone.start {
-    left: 426px;
+    /*left: 426px;
     top: 448px;
     width: 258px;  
     height: 60px;  
+    */
+    left: 271px;
+    top: 463px;
+    width: 258px;  
+    height: 60px;
     z-index: 20;
 }
 
+/*
 .greystart {
     position: absolute;
     background-image: url(../GreyStart_258x60.png);
@@ -43,6 +51,7 @@
     height: 60px;  
     z-index: 21;
 }
+*/
 
 .instructions-container {
     position: absolute;
@@ -54,7 +63,8 @@
     left: 30px;
     width: 740px;
     top: 90px;
-    height: 300px;
+    /* height: 300px; */
+    height: 345px;
     z-index: 15;
     font-size: 22px;
 }
