@@ -24,8 +24,8 @@ export class TitlescreenComponent implements OnInit {
 
     this.router.navigateByUrl('/consent_form');
 
-    // this.lockedRoomsService.roomLocked = [true, true, true, true, true, true, true, true];
-    this.lockedRoomsService.roomLocked = [false, false, false, false, false, false, false, false];
+    this.lockedRoomsService.roomLocked = [true, true, true, true, true, true, true, true];
+    // this.lockedRoomsService.roomLocked = [false, false, false, false, false, false, false, false];
     // this.lockedRoomsService.roomLocked = [false, false, false, false, false, true, true, true];
     this.timersService.hideTimer = !(hideTimerButton.checked);
 
