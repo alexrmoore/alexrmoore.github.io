@@ -51,8 +51,7 @@ export class TimerComponent implements OnInit {
     this.router.navigateByUrl('/home');
   }
 
-  // tslint:disable-next-line:typedef
-  onHintClick(){
+  onHintClick(): void{
     console.log('Hint Button Clicked!');
     console.log(this.lockedRoomsService.roomLocked);
   }
