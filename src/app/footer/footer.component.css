@@ -60,3 +60,36 @@
     height: 39px;
     z-index: 2;
 }
+
+.hintbutton {
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border: 4px groove white;
+    left: 448px;
+    top: 502px;
+    width: 110px;
+    height: 39px;
+    z-index: 2;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+
+.giveupbutton {
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border: 4px groove white;
+    left: 570px;
+    top: 502px;
+    width: 168px;
+    height: 39px;
+    z-index: 2;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+
